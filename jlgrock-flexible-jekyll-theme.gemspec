@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jlgrock-flexible-jekyll-theme"
-  spec.version       = "0.3.0"
+  spec.version       = "0.4.0"
   spec.authors       = ["Justin Grant"]
   spec.email         = ["jlgrock@gmail.com"]
 
@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.license       = "GPL-3.0"
 
   spec.files = `git ls-files -z`.split("\x0").select do |f|
-    f.match(%r{^(_(includes|layouts|sass)/|(assets)|(LICENSE|README)((\.(txt|md|markdown)|$)))}i)
+    f.match(%r{^(_(includes|layouts|sass)/|(assets|page)/|(tags.html)|(LICENSE|README)((\.(txt|md|markdown)|$)))}i)
   end
 
   spec.add_runtime_dependency "jekyll", "~> 4.0"
