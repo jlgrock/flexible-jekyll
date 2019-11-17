@@ -7,7 +7,6 @@ url: # the base hostname & protocol for your site, e.g. http://example.com
 author: 
 author-img: 
 about-author: 
-show-more-about: # true or false
 social: 
 
 # Tracker
@@ -19,8 +18,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-remote-theme
 
 paginate: 15
 paginate_path: "/page/:num"
 
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock", "README.md"]
